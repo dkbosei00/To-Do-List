@@ -1,5 +1,5 @@
 import React from 'react'
-import ToDo from './ToDo'
+import ToDo from '../ToDo/ToDo'
 
 export default function ToDoList({todos, toggleToDo}) {
     

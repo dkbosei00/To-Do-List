@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import ToDoList from "./ToDoList";
+import ToDoList from "../ToDoList/ToDoList";
 import { v4 as uuidv4 } from 'uuid'
-import './index.css'
+import './app.css'
 
-const LOCAL_STORAGE_KEY = 'T0D04PP.T0D05'
+const LOCAL_STORAGE_KEY = process.env.REACT_APP_LOCAL_STORAGE_KEY
 
 function App() {
   const [todos, setTodos] = useState(localStorage.getItem(LOCAL_STORAGE_KEY) ? JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) : [])

@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './todo.css'
 
 export default function ToDo({todo, toggleToDo}) {
     function handleToDoClick(){

@@ -3,7 +3,7 @@ import ToDoList from './components/ToDoList';
 import { v4 as uuidv4 } from 'uuid';
 import './styles/index.css';
 
-const LOCAL_STORAGE_KEY = 'T0D04PP.T0D05';
+const LOCAL_STORAGE_KEY = process.env.REACT_APP_LOCAL_STORAGE_KEY;
 
 function App() {
   const [todos, setTodos] = useState(
